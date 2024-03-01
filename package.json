@@ -1,0 +1,11 @@
+{
+  "name": "curriculum",
+  "version": "1.0.0",
+  "description": "Curriculum con Html,Css(Tailwind).",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="h-full bg-[#1c1f24]">
+    <!-- -------------------------- NAV ----------------------------------->
+
+    <header class="w-full h-[100px] fixed flex items-center bg-gray-700 z-10">
+      <nav
+        class="w-full items-center hover:cursor-pointer lg:flex lg:justify-around"
+      >
+        <div class="menu-movil w-[210px] ml-8 mr-8 flex flex-row lg:hidden">
+          <div class="svg-burger w-[65px] h-[65px]" id="btn-menu">
+            <svg
+              class="svg-burger"
+              width="65"
+              height="65"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
+          </div>
+          <div class="hidden ml-16 fixed bg-amber-400 text-white shadow-md transition-all duration-500 ease-in-out rounded-xl" id="box-burger">
+            <ul class="w-[200px] h-full pt-4 mb-4 font-sans">
+              <li class="hover:bg-[#1c1f24] hover:pt-4 hover:pb-4 ease-in duration-200 text-2xl">
+                <a id="btn-home" class="p-4" href="#home">Home</a>
+              </li>
+              <li class="hover:bg-[#1c1f24] hover:p-3 ease-in duration-200 text-2xl">
+                <a id="btn-about" class="p-4" href="#about">Sobre Mi</a>
+              </li>
+              <li class="hover:bg-[#1c1f24] hover:p-4 ease-in duration-200 text-2xl">
+                <a id="btn-estudios" class="p-4" href="#estudios">Formación</a>
+              </li>
+              <li class="hover:bg-[#1c1f24] hover:p-4 ease-in duration-200 text-2xl">
+                <a id="btn-exp" class="p-4" href="#experiencia">Experiencia</a>
+              </li>
+              <li class="hover:bg-[#1c1f24] hover:p-4 ease-in duration-200 text-2xl">
+                <a id="btn-contacto" class="p-4" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="hidden lg:flex lg:flex-row lg:gap-8">
+          <li
+            class="hover:bg-[#1c1f24] hover:p-4 ease-in duration-200 rounded-md"
+          >
+            <a id="btn-home" href="#home">Home</a>
+          </li>
+          <li
+            class="hover:bg-[#1c1f24] hover:p-4 ease-in duration-200 rounded-md"
+          >
+            <a id="btn-about" href="#about">Sobre Mi</a>
+          </li>
+          <li
+            class="hover:bg-[#1c1f24] hover:p-4 ease-in duration-200 rounded-md"
+          >
+            <a id="btn-estudios" href="#estudios">Formación</a>
+          </li>
+          <li
+            class="hover:bg-[#1c1f24] hover:p-4 ease-in duration-200 rounded-md"
+          >
+            <a id="btn-exp" href="#experiencia">Experiencia</a>
+          </li>
+          <li
+            class="hover:bg-[#1c1f24] hover:p-4 ease-in duration-200 rounded-md"
+          >
+            <a id="btn-contacto" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- -------------------------- TARJETA PRESENTACION ------------------->
+    <section
+      id="home"
+      class="w-full h-[800px] flex justify-center items-center"
+    >
+      <div
+        class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96"
+      >
+        <div
+          class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-80"
+        >
+          <img
+            src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/163254260/original/5a3f539f2ccafcc8b21870bab5ac69a5fc31259b/draw-a-personalized-pixel-art-avatar-of-you-in-my-style.png"
+            alt="profile-picture"
+          />
+        </div>
+        <div class="p-6 text-center">
+          <h1
+            class="block mb-2 text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900"
+          >
+            Daniel Gómez
+          </h1>
+          <p class="text-base">Desarrollador Web Junior</p>
+        </div>
+        <div class="flex justify-center p-6 pt-2 gap-7 text-black">
+          <a
+            href="#link"
+            class="block text-xl antialiased font-normal leading-relaxed bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400 text-blue-500"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="#twitter"
+            class="block text-xl antialiased font-normal leading-relaxed bg-clip-text bg-gradient-to-tr text-blue-500"
+          >
+            <i class="fab fa-twitter" aria-hidden="true"> </i>
+          </a>
+          <a
+            href="#instagram"
+            class="block text-xl antialiased font-normal leading-relaxed bg-clip-text bg-gradient-to-tr from-purple-600 text-purple-500"
+            ><i class="fab fa-instagram" aria-hidden="true"> </i>
+          </a>
+          <a
+            href="#github"
+            class="block text-xl antialiased font-normal leading-relaxed bg-clip-text bg-gradient-to-tr text-black"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <main class="h-full">
+      <!---------------------------- SOBRE MI ------------------------------>
+      <section
+        class="w-full h-full mb-10 p-4 mt-10 flex flex-col justify-center items-center lg:mt-12 lg:h-screen" id="about"
+      >
+        <article class="text-center w-full flex flex-col items-center">
+          <h2 class="text-4xl mt-[110px] text-center lg:text-6xl" >SOBRE MI</h2>
+          <p class="text-xl text-center p-8 lg:w-3/4">
+            Soy un apasionado desarrollador junior con un enfoque claro en la
+            creación de soluciones innovadoras y eficientes. Mi dedicación y
+            habilidades técnicas se combinan para abordar desafíos y entregar
+            resultados de alta calidad.
+          </p>
+        </article>
+        <!--------------------------- DATOS E INTERESES ------------------->
+        <article
+          class="w-full flex flex-col sm:flex-col lg:flex-row justify-around items-center"
+        >
+          <!--------------------------- DATOS ------------------->
+
+          <div
+            class="w-[300px] h-[300px] mx-4 mt-4 p-5 bg-[#3d6b8c] rounded-xl"
+          >
+            <div class="card flex flex-col justify-start gap-3">
+              <h3 class="text-3xl text-center">Datos de Personales</h3>
+              <ul class="p-4 mt-4">
+                <li>Correo: daniel@gmail.com</li>
+                <li>Tel: 123-989-334</li>
+                <li>Ubicación: Vigo, Galicia.</li>
+              </ul>
+            </div>
+          </div>
+          <!--------------------------- INTERESES ------------------->
+
+          <div
+            class="w-[300px] h-[300px] mx-4 mt-4 p-5 bg-[#3d6b8c] rounded-xl"
+          >
+            <h3 class="text-3xl text-center">Intereses</h3>
+            <ul class="p-4 mt-4">
+              <li>- Tecnología y Gaming</li>
+              <li>- Deportes</li>
+              <li>- Artes y Creatividad</li>
+              <li>- Viajes</li>
+              <li>- Networking y Comunidad</li>
+            </ul>
+          </div>
+
+          <!---------------------------- BUTTON CV --------------------------->
+        </article>
+        <button
+          class="bg-[#ffb636] hover:text-[#3d6b8c] text-white font-bold m-10 py-2 px-4 rounded-sm inline-flex items-center"
+        >
+          <svg
+            class="fill-current w-4 h-4 mr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+          </svg>
+          <span>Download CV</span>
+        </button>
+      </section>
+
+      <!---------------------------- ESTUDIOS ------------------------------>
+      <section
+        class="w-full h-full sm:h-full sm:flex-col lg:mt-12 lg:h-screen p-4 flex flex-col justify-center gap-8 mt-10 mb-10"
+        id="estudios"
+      >
+        <article class="text-center w-full flex items-center justify-center">
+          <h2 class="text-4xl mt-[110px] text-center lg:text-6xl">FORMACIÓN</h2>
+        </article>
+        <article
+          class="w-full flex justify-center items-center flex-col lg:flex-row"
+        >
+          <!--------------------------- FORMACION 1 ------------------->
+          <div
+            class="w-[300px] h-[300px] mx-4 mt-4 p-5 bg-[#3d6b8c] rounded-xl"
+          >
+            <div class="card flex flex-col justify-start gap-3">
+              <h3 class="text-3xl text-center">FP Electromecánica</h3>
+              <ul class="p-4 mt-4">
+                <li>Año: 2019 / 2022</li>
+                <li>Centro: Valentín Paz Andrade</li>
+                <li>Ubicación: Vigo, Galicia.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--------------------------- FORMACION 2 ------------------->
+
+          <div
+            class="w-[300px] h-[300px] mx-4 mt-4 p-5 bg-[#3d6b8c] rounded-xl"
+          >
+            <div class="card flex flex-col justify-start gap-3">
+              <h3 class="text-3xl text-center">
+                Gestión de Sistemas Informáticos
+              </h3>
+              <ul class="p-4 mt-4">
+                <li>Año: 2019 / 2022</li>
+                <li>Centro: Valentín Paz Andrade</li>
+                <li>Ubicación: Vigo, Galicia.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--------------------------- FORMACION 3 ------------------->
+
+          <div
+            class="w-[300px] h-[300px] mx-4 mt-4 p-5 bg-[#3d6b8c] rounded-xl"
+          >
+            <div class="card flex flex-col justify-start gap-3">
+              <h3 class="text-3xl text-center">
+                Desarrollo de Aplicaciones web
+              </h3>
+              <ul class="p-4 mt-4">
+                <li>Año: 2019 / 2022</li>
+                <li>Centro: Valentín Paz Andrade</li>
+                <li>Ubicación: Vigo, Galicia.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!---------------------------- EXPERIENCIA --------------------------->
+
+      <section
+        class="w-full h-full p-4 flex flex-col justify-center gap-8 lg:mt-12 lg:h-screen"
+        id="experiencia"
+      >
+        <article class="text-center w-full md:w flex flex-col items-center">
+          <h2 class="text-4xl mt-[110px] text-center lg:text-6xl">EXPERIENCIA LABORAL</h2>
+        </article>
+        <article
+          class="w-full flex justify-center items-center flex-col lg:flex-row"
+        >
+          <!--------------------------- trabajo 1 ------------------->
+          <div
+            class="w-[300px] h-[400px] mx-4 mt-4 p-5 bg-[#3d6b8c] rounded-xl"
+          >
+            <div class="card flex flex-col justify-start gap-3">
+              <h3 class="text-3xl text-center">
+                Gestión de Sistemas Informáticos
+              </h3>
+              <p class="p-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia quisquam enim ad quae atque, obcaecati voluptatibus
+                dolorum cum.
+              </p>
+              <ul class="pb-3">
+                <li>Empresa: Portales Verticales S.L</li>
+                <li>Centro: Valentín Paz Andrade</li>
+                <li>Ubicación: Vigo, Galicia.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--------------------------- trabajo 2 ------------------->
+
+          <div
+            class="w-[300px] h-[400px] mx-4 mt-4 p-5 bg-[#3d6b8c] rounded-xl"
+          >
+            <div class="card flex flex-col justify-start gap-3">
+              <h3 class="text-3xl text-center">
+                Gestión de Sistemas Informáticos
+              </h3>
+              <p class="p-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia quisquam enim ad quae atque, obcaecati voluptatibus
+                dolorum cum.
+              </p>
+              <ul class="p-4">
+                <li>Año: 2019 / 2022</li>
+                <li>Centro: Valentín Paz Andrade</li>
+                <li>Ubicación: Vigo, Galicia.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--------------------------- trabajo 3 ------------------->
+
+          <div
+            class="w-[300px] h-[400px] mx-4 mt-4 p-5 bg-[#3d6b8c] rounded-xl"
+          >
+            <div class="card flex flex-col justify-start gap-3">
+              <h3 class="text-3xl text-center">
+                Gestión de Sistemas Informáticos
+              </h3>
+              <p class="p-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia quisquam enim ad quae atque, obcaecati voluptatibus
+                dolorum cum.
+              </p>
+              <ul class="p-4">
+                <li>Año: 2019 / 2022</li>
+                <li>Centro: Valentín Paz Andrade</li>
+                <li>Ubicación: Vigo, Galicia.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!---------------------------- CONTACTO ------------------------------->
+      <section
+        id="contacto"
+        class="w-full h-full  flex justify-center items-center lg:mt-12 lg:h-screen"
+      >
+        <div class="py-8 lg:py-16 px-4 mx-auto w-[500px]">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center">
+            Contacto
+          </h2>
+          <form action="#" class="space-y-8">
+            <div>
+              <label
+                for="name"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Nombre</label
+              >
+              <input
+                type="name"
+                id="name"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="Carlos"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="name@correo.com"
+                required
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="message"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                >Mensaje</label
+              >
+              <textarea
+                id="message"
+                rows="6"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Mensaje..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="text-white bg-[#ffb636] hover:bg-slate-900 hover:text-[#ffb636] focus:outline-none focus:ring-4 font-bold rounded-full text-sm px-5 py-2.5 text-center dark:focus:ring-yellow-900"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
